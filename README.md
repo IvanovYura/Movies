@@ -10,7 +10,7 @@ This is a simple service which returns information about films and people appear
 ### How To
 
 1. run ```python -m pipenv install``` to create a virtual environment and install dependencies 
-2. run ```python service/app.py``` to run an application
+2. run ```python app.py``` to run an application
 3. use Browser ```http://127.0.0.1:8000``` to see the Swagger UI or use CURL to test the endpoint
 
 ### Testing
