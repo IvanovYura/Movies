@@ -6,6 +6,9 @@ from service.external_services import api
 
 
 def get_movies() -> List[dict]:
+    """
+    Returns movies got from merged responses: people and films
+    """
     people = api.get_people()
     films = api.get_films()
 
@@ -23,4 +26,5 @@ def get_movies() -> List[dict]:
 
 
 def _get_film_id(film_url: str) -> str:
+    # parse people film to get an ID
     return urlsplit(film_url).path.split('/films/')[-1]

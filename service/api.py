@@ -10,6 +10,7 @@ ns = Namespace(
     path='/',
 )
 
+# register models
 ns.models[film_model.name] = film_model
 ns.models[person.name] = person
 

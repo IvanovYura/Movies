@@ -29,12 +29,18 @@ class GhibliApi:
         return response
 
     def get_people(self) -> List[dict]:
+        """
+        Returns people from GhibliApi
+        """
         url = f'{self.api_url}/people'
         response = self.get(url)
 
         return json.loads(response.content)
 
     def get_films(self) -> List[dict]:
+        """
+        Returns movies from GhibliApi
+        """
         url = f'{self.api_url}/films'
         response = self.get(url)
 
